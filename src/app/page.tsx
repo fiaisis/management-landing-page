@@ -1,95 +1,79 @@
-import Image from "next/image";
 import styles from "./page.module.css";
+import { Box } from "@mui/system";
+import { Button, Grid, Typography } from "@mui/material";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main style={{ padding: 4 }}>
+      <Box sx={{ padding: 4 }}>
+        <Typography variant="h4" gutterBottom>
+          Management
+        </Typography>
+        <Box sx={{ marginBottom: 4 }}>
+          <Button
+            variant="contained"
+            color="primary"
+            href="https://management.reduce.isis.cclrc.ac.uk/argocd"
+            sx={{ marginRight: 2 }}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+            ArgoCD
+          </Button>
+          <Button
+            variant="contained"
+            color="secondary"
+            href="https://management.reduce.isis.cclrc.ac.uk/grafana"
+          >
+            Grafana
+          </Button>
+        </Box>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={6}>
+            <Box sx={{ border: "1px solid grey", borderRadius: 2, padding: 2 }}>
+              <Typography variant="h5" gutterBottom>
+                Staging
+              </Typography>
+              <Button
+                variant="outlined"
+                color="primary"
+                href="https://dev.reduce.isis.cclrc.ac.uk"
+                sx={{ marginRight: 2 }}
+              >
+                Frontend
+              </Button>
+              <Button
+                variant="outlined"
+                color="secondary"
+                href="https://dev.reduce.isis.cclrc.ac.uk/admin-portal"
+              >
+                Admin-Portal
+              </Button>
+            </Box>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Box sx={{ border: "1px solid grey", borderRadius: 2, padding: 2 }}>
+              <Typography variant="h5" gutterBottom>
+                Production
+              </Typography>
+              <Button
+                variant="outlined"
+                color="primary"
+                href="https://reduce.isis.cclrc.ac.uk/"
+                sx={{ marginRight: 2 }}
+              >
+                Frontend
+              </Button>
+              <Button
+                variant="outlined"
+                color="secondary"
+                href="https://reduce.isis.cclrc.ac.uk/admin-portal"
+              >
+                Admin-Portal
+              </Button>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
     </main>
   );
 }
