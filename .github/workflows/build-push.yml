@@ -46,7 +46,7 @@ jobs:
       - name: Edit the YAML management-landing-page file
         uses: mikefarah/yq@v4.44.2
         with:
-          cmd: yq e -i '.spec.template.spec.containers[] |= select(.name == "management-landing-page").image = "ghcr.io/fiaisis/management-landing-page@${{ steps.plotting_service_build.outputs.digest }}"' './components/management-landing-page/management-landing-page.yml'
+          cmd: yq e -i '.spec.template.spec.containers[] |= select(.name == "management-landing-page").image = "ghcr.io/fiaisis/management-landing-page@${{ steps.management_landing_page_build.outputs.digest }}"' './components/management-landing-page/management-landing-page.yml'
 
       - name: Commit and push changes
         run: |
