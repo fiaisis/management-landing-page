@@ -52,4 +52,5 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -am "
+          git commit -am "[CD] Updated the management landing page"
+          git push
