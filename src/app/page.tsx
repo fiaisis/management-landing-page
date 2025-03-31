@@ -37,16 +37,23 @@ export default function Home() {
                 variant="outlined"
                 color="primary"
                 href="https://dev.reduce.isis.cclrc.ac.uk"
-                sx={{ marginRight: 2 }}
               >
                 Frontend
               </Button>
               <Button
                 variant="outlined"
                 color="secondary"
+                sx={{ marginX: 2 }}
                 href="https://dev.reduce.isis.cclrc.ac.uk/admin-portal"
               >
                 Admin-Portal
+              </Button>
+              <Button
+                variant="outlined"
+                color="secondary"
+                href="https://dev.reduce.isis.cclrc.ac.uk/api/docs"
+              >
+                API Docs
               </Button>
             </Box>
           </Grid>
@@ -59,16 +66,23 @@ export default function Home() {
                 variant="outlined"
                 color="primary"
                 href="https://reduce.isis.cclrc.ac.uk/"
-                sx={{ marginRight: 2 }}
               >
                 Frontend
               </Button>
               <Button
                 variant="outlined"
                 color="secondary"
+                sx={{ marginX: 2 }}
                 href="https://reduce.isis.cclrc.ac.uk/admin-portal"
               >
                 Admin-Portal
+              </Button>
+              <Button
+                variant="outlined"
+                color="secondary"
+                href="https://reduce.isis.cclrc.ac.uk/api/docs"
+              >
+                API Docs
               </Button>
             </Box>
           </Grid>
