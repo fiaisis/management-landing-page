@@ -28,7 +28,11 @@ export default function Home() {
         </Box>
 
         <Grid container spacing={4}>
-          <Grid item xs={12} md={6}>
+          <Grid
+            size={{
+              xs: 12,
+              md: 6
+            }}>
             <Box sx={{ border: "1px solid grey", borderRadius: 2, padding: 2 }}>
               <Typography variant="h5" gutterBottom>
                 Staging
@@ -57,7 +61,11 @@ export default function Home() {
               </Button>
             </Box>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid
+            size={{
+              xs: 12,
+              md: 6
+            }}>
             <Box sx={{ border: "1px solid grey", borderRadius: 2, padding: 2 }}>
               <Typography variant="h5" gutterBottom>
                 Production
