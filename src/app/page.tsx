@@ -16,7 +16,7 @@ export default function Home() {
             href="https://management.reduce.isis.cclrc.ac.uk/argocd"
             sx={{ marginRight: 2 }}
           >
-            NinjagoCD
+            ArgoCD
           </Button>
           <Button
             variant="contained"
