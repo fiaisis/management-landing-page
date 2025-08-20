@@ -15,20 +15,20 @@
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@mui/material": "^7.2.0",
-    "@mui/material-nextjs": "^7.2.0",
-    "next": "15.4.5",
+    "@mui/material": "^7.3.1",
+    "@mui/material-nextjs": "^7.3.0",
+    "next": "15.5.0",
     "react": "^19",
     "react-dom": "^19"
   },
   "devDependencies": {
-    "@cypress/code-coverage": "^3.14.5",
+    "@cypress/code-coverage": "^3.14.6",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "cypress": "^14.5.3",
+    "cypress": "^14.5.4",
     "eslint": "^9",
-    "eslint-config-next": "15.4.5",
+    "eslint-config-next": "15.5.0",
     "prettier": "^3.6.2",
     "typescript": "^5"
   }
