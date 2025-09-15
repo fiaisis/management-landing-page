@@ -1,4 +1,3 @@
-import styles from "./page.module.css";
 import { Box } from "@mui/system";
 import { Button, Grid, Typography } from "@mui/material";
 
@@ -9,21 +8,25 @@ export default function Home() {
         <Typography variant="h4" gutterBottom>
           Management
         </Typography>
-        <Box sx={{ marginBottom: 4 }}>
+        <Box sx={{ marginBottom: 4, display: "flex", gap: 2 }}>
           <Button
             variant="contained"
             color="primary"
             href="https://management.reduce.isis.cclrc.ac.uk/argocd"
-            sx={{ marginRight: 2 }}
           >
             ArgoCD
           </Button>
           <Button
             variant="contained"
-            color="secondary"
             href="https://management.reduce.isis.cclrc.ac.uk/grafana"
           >
             Grafana
+          </Button>
+          <Button
+            variant={"contained"}
+            href={"https://reduce.isis.cclrc.ac.uk/redpanda-console/overview"}
+          >
+            Red Panda Console
           </Button>
         </Box>
 
