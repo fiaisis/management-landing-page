@@ -20,6 +20,12 @@ describe('Management Landing Page', () => {
       .should('have.attr', 'href', 'https://management.reduce.isis.cclrc.ac.uk/grafana');
   });
 
+  it('displays the secrets button', () => {
+    cy.contains('secrets')
+      .should('be.visible')
+      .should('have.attr', 'href', 'https://secrets.isis.rl.ac.uk');
+  });
+
   describe('Staging Section', () => {
     it('displays the section title', () => {
       cy.contains('h5', 'Staging').should('be.visible');

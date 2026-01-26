@@ -28,6 +28,12 @@ export default function Home() {
           >
             Red Panda Console
           </Button>
+          <Button
+            variant="contained"
+            href="https://secrets.isis.rl.ac.uk"
+          >
+            secrets
+          </Button>
         </Box>
 
         <Grid container spacing={4}>
