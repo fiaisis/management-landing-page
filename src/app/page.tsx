@@ -34,6 +34,12 @@ export default function Home() {
           >
             secrets
           </Button>
+          <Button
+            variant="contained"
+            href="https://isiscomputinggroup.github.io/WebDashboard/instruments"
+          >
+            Ibex Dashboard
+          </Button>
         </Box>
 
         <Grid container spacing={4}>
