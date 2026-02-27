@@ -26,6 +26,12 @@ describe('Management Landing Page', () => {
       .should('have.attr', 'href', 'https://secrets.isis.rl.ac.uk');
   });
 
+  it('displays the Ibex Dashboard button', () => {
+    cy.contains('Ibex Dashboard')
+      .should('be.visible')
+      .should('have.attr', 'href', 'https://isiscomputinggroup.github.io/WebDashboard/instruments');
+  });
+
   describe('Staging Section', () => {
     it('displays the section title', () => {
       cy.contains('h5', 'Staging').should('be.visible');
