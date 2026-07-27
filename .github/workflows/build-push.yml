@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: Check out code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Log in to the Container registry
         uses: docker/login-action@v4
@@ -38,7 +38,7 @@ jobs:
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/management-landing-page:${{ github.sha }}
 
       - name: Checkout the Gitops repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           repository: fiaisis/gitops
           token: ${{ secrets.GITOPS_STAGING_EDIT_TOKEN }}

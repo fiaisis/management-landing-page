@@ -4350,9 +4350,14 @@ supports-preserve-symlinks-flag@^1.0.0:
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 systeminformation@^5.31.1:
-  version "5.33.1"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.33.1.tgz#499f06a859d2abeafaae6d69f71dd3516919f0f4"
-  integrity sha512-DEN6ICHk3Tk0Uf/hrAHh7xlt7iL5CJFBtPZinA0H62DrGG/KPKqq/Nzj6lCXPS4Ay/sf/14zNnk9LpqKzBIc+w==
+  version "5.31.17"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.31.17.tgz#60bd1cdaeb34212b5ad2410608ee47d41d2d8560"
+  integrity sha512-TvFA9iwDWlMjqZVlKIJ0Cy+Zgm9ttlMx0SMRwJDMNKyhlEKWBMb3+WRwDi/3dvHdWbexpos4Osp4U49p5WjB5g==
+
+tapable@^2.2.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
+  integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
 test-exclude@^8.0.0:
   version "8.0.0"
